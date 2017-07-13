@@ -1,0 +1,63 @@
+/* language selector in default desktop mode*/
+#headerNav #langNavigation .folder-toggle-label{
+    color: white !important;
+    border-radius: 50px;
+    padding: 0;
+    line-height: 3em;
+    width: 3em;
+    background: #292525;
+    border:5px solid #292525;
+ }
+/* set selected language color to white when hamburger menu open*/
+.force-mobile-nav.mobile-nav-open #sidecarNav{
+    color: white;
+}
+/* ensure selected language color remains white in hamburger after changing language*/
+.mobile-nav-open #sidecarNav {
+	color: white !important;
+  
+}
+/* add padding to languages in dropdown */
+#headerNav nav .subnav, #sidecarNav nav .subnav {
+    background-color: #201a16;
+    padding: .5em 0 .5em 0;
+}
+/* align navbar elements to left, right is default*/
+#headerNav {
+  text-align: left !important;
+}
+#headerNav #langNavigation.top{
+   top:-3px;
+ }
+/* add grey circle background when suspended navbar appears after scrolling*/
+#showOnScrollWrapper #langNavigation  .folder-toggle-label{
+    background: #292525;
+    border:5px solid #292525;
+ }
+/* position language selector absolutely, above other layers*/
+ #langNavigation{
+     position: absolute;
+     z-index: 10050;
+ }
+ #langNavigation.right{
+     right: 0;
+ }
+ #langNavigation.left{
+     left: 0;
+ }
+ #langNavigation.top{
+     top: 0;
+ }
+ #langNavigation.bottom{
+     bottom: 0;
+ }
+/* align languages in dropdown to the left*/
+html:not(.touch-styles) body:not(.always-use-overlay-nav) .nav-wrapper #langNavigation.right .folder .subnav {
+    left: auto;
+    right: 0;
+    text-align: left;
+ }
+/* change padding around content of suspended navbar that appears after scrolling*/
+.header-inner {
+    padding: 11spx 0;
+}
