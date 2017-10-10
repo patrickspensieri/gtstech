@@ -61,3 +61,27 @@ html:not(.touch-styles) body:not(.always-use-overlay-nav) .nav-wrapper #langNavi
 .header-inner {
     padding: 11spx 0;
 }
+/*custom css for screens under 480px*/
+@media only screen and (max-width: 480px) {
+    /* prevent slideshow text from disappearing on small screens */
+    .sqs-gallery-block-slideshow .meta {
+        display: block !important;
+    }
+    /* change padding for slideshow image text */
+    .sqs-gallery-block-slideshow .meta-inside {
+        padding: 8px !important;
+    }
+    /* set max-width and margin for text box in slideshow*/
+    .sqs-gallery-block-slideshow.sqs-gallery-block-meta-position-bottom-left .meta {
+        max-width: 100% !important;
+        margin: 8px !important;
+    }
+    /* set text size in slideshows*/
+    .sqs-gallery-block-slideshow .meta .meta-description,
+    .sqs-gallery-block-slideshow .meta .meta-description p {
+        font-size: 12px !important;
+    }
+    .sqs-gallery-block-slideshow .meta .meta-title {
+        font-size: 12px !important;
+    }
+}
